@@ -563,3 +563,9 @@ export function useContext(context) {
   答：通过 Option Hooks 钩子限制只允许在 diff 阶段执行 Hooks，在非 diff 阶段执行 Hooks 会导致相关错误抛出。
 
   具体参考 3.4.1 小节。
+
+### 五 思考
+
+在黄子毅的文章：[精读《useEffect 完全指南》](https://zhuanlan.zhihu.com/p/60277120)中，讲到了一个 `Capture Value` 的概念。
+
+读完这篇文章，可以思考一下 `Capture Value` 产生的根本原因是什么？在写代码的过程中如何避免 `Capture Value` 导致的 bug？
